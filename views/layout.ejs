@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Scripts and styles here -->
+  <link rel="stylesheet" type="text/css" href="/css/app.css">
 </head>
 <body class="container">
+  <div style="border: 2px solid;border-radius: 10px; border-color:#C0C0C0">
+    <header>
+      <h2 style="background-color:#F8F8F8">Configuration</h2>
+    </header>
 
-  <header>
-    <h1>Hello World App</h1>
-  </header>
-
-  <section id="content"><%- content %></section>
-
-  <footer>
-    <p>&copy; Nobody</p>
-  </footer>
-
+    <section id="content"><%- content %></section>
+  </div>
   <!-- Include our bundled JS -->
   <script src="/js/bundle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $('#submitButton').click(
+    function onSubmit(){
+      var formjson = $('form').serializeArray();
+      alert(JSON.stringify(formjson));
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+div.eventdiv{
+	border: 1px solid;
+	border-color: #D3D3D3;
+	margin: 20px;
+	padding: 5px;
+	border-radius: 5px;
+}
+div.rows{
+	padding: 10px;
+}
+
+.eventAdd{
+	margin: 10px;
+}
+
+.buttondel{
+	border-radius: 50%;
+}
+
+.button{
+	background-color: white;
+}
+

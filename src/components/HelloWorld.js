@@ -1,12 +1,12 @@
 import React from 'react';
-import SimpleCounter from './SimpleCounter';
+import SimpleForm from './SimpleForm';
 
 export default class HelloWorld extends React.Component {
   render() {
     return (
       <div>
-        <p>Hello world!</p>
-        <SimpleCounter />
+        Name:<input type="text" value="funnel1" className="input"/>
+        <SimpleForm />
       </div>
     );
   }
